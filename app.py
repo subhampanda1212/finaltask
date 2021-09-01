@@ -7,11 +7,11 @@ import os
 import urllib.request
  
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:/Users/Dell/3D Objects/My_Python/my_task/blog.db'+'?check_same_thread=False'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'blog.db'+'?check_same_thread=False'
 app.config['SECRET_KEY'] = 'cairocoders-ednalan'
 app.config['MAX_CONTENT_LENGTH'] = 1024 * 1024
  
-UPLOAD_FOLDER = 'C:/Users/Dell/3D Objects/My_Python/my_task/upload'
+UPLOAD_FOLDER = 'upload'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 #app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
   
